@@ -1,0 +1,722 @@
+//variables
+$accentBlue: #007BCF;
+$accentBlueHovered: #006CB3;
+$blueMedium: #BFE5FF;
+$blueLight: #E6F9FF;
+
+$black: #001B2D;
+
+$orange: #FCA311;
+$orangeLight: #FFDEC5;
+$orangeDark: #E1B89A;
+
+$green: #00B896;
+$greenLight: #C2F2EC;
+$greenDark: #83C3BC;
+
+$yellowLight: #FFF4D6;
+$yellowDark: #D9CDAC;
+
+$purpleLight: #E2E6FE;
+$purpleDark: #AEB4D7;
+
+$red: #FF4846;
+$redLight: #FFC7C9;
+$redDark: #D99D9F;
+
+$cyan: #C2F2EC;
+
+
+@media screen and (max-width: 1180px){
+    .bestProjects{
+        &__heading{
+            font-size: 20px;
+        }
+
+        &__paragraph{
+            font-size: 14px;
+        }
+
+        &__info{
+        }
+    }
+
+    .projectBlock{
+
+        &__miniBlock{
+            left: 0;
+        }
+
+        &__share{
+            margin-left: 0;
+        }
+
+        &__article{
+            padding-left: 75px;
+        }
+    }
+}
+
+@media screen and(max-width: 920px){
+    .projectBlock{
+        &__gallery{
+            &-grid{
+                grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+            }
+        }
+
+        &__sidebar{
+            max-width: 240px;
+        }
+
+        &__article{
+            width: calc(100% - 300px);
+        }
+    }
+}
+
+@media screen and (max-width: 800px){
+
+    .title{
+        font-size: 40px;
+    }
+
+
+    .eventSlider{
+        &__wrap{
+            padding-bottom: 50px;
+        }
+    }
+
+    .about{
+
+        &__wrap{
+            padding-top: 50px;
+            // flex-direction: column;
+        }
+
+        &__img{
+            max-width: 300px;
+            img{
+                width: 600px;
+            }
+        }
+    }
+
+    .centerBanner{
+        &__wrap{
+            padding-top: 100px;
+        }
+
+        &__title{
+            margin-bottom: 40px;
+            span{
+                padding-bottom: 10px;
+            }
+        }
+
+        &__button{
+            margin-bottom: 40px;
+            padding-right: 30px;
+            padding-left: 30px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            font-size: 18px;
+        }
+    }
+
+    .idea{
+        &__split{
+            flex-direction: column-reverse;
+        }
+
+        &__form{
+            margin-right: 0;
+            margin-top: 20px;
+        }
+    }
+
+    .mainBanner{
+        // background: none;
+        background-image: none;
+
+        &__wrap{
+            padding-bottom: 100px;
+        }
+
+        &__buttons{
+            margin-top: 50px;
+        }
+    }
+
+    .projectBlock{
+        &__title{
+            font-size: 24px;
+        }
+    }
+}
+
+@media screen and (max-width: 720px){
+    .projectBlock{
+        &__split{
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &__cover{
+            height: 250px;
+        }
+
+        &__article{
+            max-width: 100%;
+            width: auto;
+            margin-bottom: 30px;
+            padding-left: 60px;
+        }
+
+        &__sidebar{
+            max-width: 100%;
+            margin: 0;
+        }
+
+        &__gallery{
+            &-grid{
+                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            }
+        }
+
+        &__miniBlock{
+            position: absolute;
+            left: 0;
+            top: 30px;
+            box-sizing: border-box;
+        }
+
+        &__share{
+            width: 50px;
+            top: 30px;
+        }
+    }
+
+    .crumbs{
+
+        &__wrap{
+            flex-wrap: wrap;
+        }
+
+        a{
+            font-size: 12px;
+            white-space: nowrap;
+        }
+
+        span{
+            font-size: 12px;
+            white-space: nowrap;
+        }
+    }
+}
+
+@media screen and (max-width: 620px){
+    .header{
+        &__bottom{
+            &-wrap{
+                justify-content: space-between;
+            }
+            .header__nav{
+                display: none;
+            }
+
+            .header__button{
+                display: none;
+
+            }
+            
+        }
+
+        &__top{
+            &-wrap{
+                justify-content: center;
+            }
+            .header__socialsRow{
+                display: none;
+            }
+        }
+
+        &__toggler{
+            display: block;
+        }
+
+        
+    }
+
+    .title{
+        font-size: 32px;
+        line-height: 40px;
+    }
+
+    .topLabel{
+        margin-bottom: 0;
+    }
+
+    .eventSlider{
+        &__item{
+            height: 230px;
+            p{
+                font-size: 14px;
+            }
+        }
+
+        &__title{
+            margin-bottom: 40px;
+        }
+
+        &__wrap{
+            padding-top: 40px;
+            padding-bottom: 40px;
+        }
+    }
+
+    .about{
+        &__wrap{
+            flex-direction: column-reverse;
+            align-items: center;
+        }
+
+        &__img{
+            img{
+                margin: 0;
+                margin-left: -185px;
+                margin-bottom: -60px;
+                margin-top: -40px;
+            }
+        }
+
+        &__paragraph{
+            margin-top: 30px;
+            margin-bottom: 30px;
+            font-size: 14px;
+        }
+    }
+
+    .categories{
+        &__wrap{
+            padding-bottom: 40px;
+
+        }
+
+        &__title{
+            margin-bottom: 40px;
+        }
+    }
+
+    .bestProjects{
+        &__grid{
+            grid-template-columns: repeat(1, 1fr);
+            margin-right: -10px;
+            margin-left: -10px;
+        }
+    }
+
+    .centerBanner{
+        &__wrap{
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
+
+        &__title{
+            margin-bottom: 20px;
+        }
+
+        &__label{
+            margin-bottom: 20px;
+        }
+    }
+
+    .faq{
+        &__wrap{
+            padding-top: 40px;
+            padding-bottom: 40px;
+        }
+
+        &__item{
+            padding-right: 30px;
+            padding-left: 30px;
+        }
+
+        &__heading{
+            padding-top: 20px;
+            padding-bottom: 20px;
+            font-size: 20px;
+        }
+    }
+
+    .orgs{
+        &__dots{
+            margin: 0px auto;
+        }
+
+        &__wrap{
+            padding-top: 40px;
+            padding-bottom: 40px;
+        }
+
+        &__item{
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
+
+        &__title{
+            margin-bottom: 40px;
+        }
+
+        &__arrows{
+            margin-top: 30px;
+        }
+    }
+    
+    .subscribe{
+        &__title{
+            font-size: 22px;
+        }
+
+        &__text-input{
+            margin-right: 10px;
+        }
+
+    }
+
+    .mainBanner{
+        &__buttons{
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        &__button:first-child{
+            margin-right: 0;
+            margin-bottom: 15px;
+        }
+    }
+
+    .pagination{
+        flex-wrap: wrap;
+        &__button{
+            position: unset;
+        }
+    }
+
+    .projects{
+        &__headingBlock{
+            padding-bottom: 20px;   
+        }
+
+        &__title{
+            margin-bottom: 20px;
+        }
+
+        &__link{
+            padding-top: 5px;
+            padding-bottom: 5px;
+            padding-right: 10px;
+            padding-left: 10px;
+            font-size: 12px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            span{
+                margin-left: 10px;
+            }
+        }
+    }
+
+    .projectBlock{
+        &__title{
+            font-size: 22px;
+            margin-bottom: 10px;
+        }
+
+        &__split{
+            padding-top: 10px;
+        }
+
+        &__article{
+            margin-bottom: 20px;
+            p{
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 480px){
+
+
+    .bestProjects{
+        &__info{
+            padding-right: 20px;
+            padding-bottom: 20px;
+            padding-left: 20px;
+        }
+
+        &__wrap{
+            padding-top: 40px;
+            padding-bottom: 40px;
+        }
+
+        &__title{
+            margin-bottom: 20px;
+        }
+
+        &__heading{
+            font-size: 16px;
+        }
+
+        &__paragraph{
+            font-size: 12px;
+        }
+
+        &__item{
+            height: 300px;
+            &:hover{
+                .bestProjects__heading{
+                    margin-bottom: 10px;
+                }
+            }
+        }
+    }
+
+    .infoRow{
+        &__item{
+            font-size: 16px;
+        }
+    }
+
+    .eventSlider{
+
+        
+
+        &__arrows{
+            margin-top: 30px;
+            display: flex;
+            justify-content: center;
+        }
+    }
+
+    .header{
+
+        &__top{
+            &-wrap{
+                padding-top: 10px;
+                padding-bottom: 10px;
+                justify-content: flex-start;
+            }
+        }
+
+        &__bottom{
+            &-wrap{
+                padding-bottom: 10px;
+                padding-top: 10px;
+            }
+        }
+
+        &__infoRow{
+            flex-direction: column;
+            .infoRow__separator{
+                display: none;
+            }
+
+            .infoRow__item{
+                &:not(:last-child){
+                    margin-bottom: 10px;
+                }
+            }
+        }
+    }
+
+    .centerBanner{
+        &__title{
+            font-size: 24px;
+        }
+
+        &__button{
+            font-size: 16px;
+            padding-right: 20px;
+            padding-left: 20px;
+        }
+
+        &__label{
+            font-size: 18px;
+        }
+    }
+
+    .faq{
+
+        &__title{
+            margin-bottom: 20px;
+        }
+
+        &__heading{
+            font-size: 18px;
+            padding-top: 15px;
+            padding-bottom: 15px;
+        }
+
+        &__paragraph{
+            margin-top: 20px;
+            font-size: 14px;
+        }
+
+        &__item{
+            padding-right: 15px;
+            padding-left: 15px;
+        }
+    }
+
+    .idea{
+        &__form{
+            padding-right: 20px;
+            padding-left: 20px;
+            border-radius: 0;
+            margin-right: -10px;
+            margin-left: -10px;
+        }
+
+        &__text-input{
+            margin-bottom: 10px;
+        }
+
+        &__checkRow{
+            margin-left: 0;
+            label{
+                font-size: 14px;
+            }
+        }
+    }
+
+    .footer{
+        &__top{
+            flex-direction: column;
+            padding-bottom: 20px;
+        }
+
+        &__wrap{
+            padding-top: 50px;
+        }
+    }
+
+    .subscribe{
+
+        &__wrap{
+            padding-top: 40px;
+            padding-bottom: 40px;
+        }
+
+        &__title{
+            margin-bottom: 20px;
+        }
+
+        &__form{
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &__text-input{
+            margin-right: 0;
+            margin-bottom: 10px;
+        }
+
+    }
+
+    .mainBanner{
+        &__wrap{
+            padding-bottom: 40px;
+            padding-top: 40px;
+        }
+
+        &__buttons{
+            margin-top: 30px;
+        }
+
+        &__title{
+            font-size: 22px;
+            line-height: 30px;
+            br{
+                display: none;
+            }
+        }
+    }
+
+    .projects{
+        &__grid{
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        }
+    }
+
+    .projectCard{
+        &__heading{
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        &__desc{
+            padding-top: 10px;
+        }
+
+        &__imgBlock{
+            height: 280px;
+        }
+
+        &__paragraph{
+            font-size: 14px;
+        }
+
+        &__imgRow{
+            flex-direction: column-reverse;
+            justify-content: flex-start;
+            align-items: flex-start;
+            padding-right: 10px;
+            padding-left: 10px;
+        }
+
+        &__date{
+            margin-bottom: 10px;
+        }
+    }
+
+    .projectBlock{
+        &__miniBlock{
+            padding-bottom: 10px;
+            height: 50px;
+            width: 100%;
+            min-height: 0;
+            top: unset;
+            bottom: 0;
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        &__share{
+            flex-direction: row;
+            margin-left: auto;
+            width: auto;
+            position: unset;
+            &-icons{
+                flex-direction: row;
+                border-right: 1px solid $blueLight;
+            }
+            &-icon{
+                margin: 0px 10px;
+            }
+        }
+
+        &__text{
+            transform: unset;
+            height: auto;
+            margin: 0;
+            margin-left: 10px;
+        }
+
+        &__article{
+            padding-left: 0;
+            padding-bottom: 50px;
+        }
+    }
+}
