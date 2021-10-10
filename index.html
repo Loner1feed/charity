@@ -15,6 +15,59 @@
 </head>
 <body>
 
+    <div class="popups">
+        <div class="popup" id="need-help">
+            <a href="javascript://" class="popup__close"><span class="icon-close"></span></a>
+            <h5 class="popup__heading">Запросити допомогу</h5>
+            <span class="popup__subtitle">Заповнiть форму та расскажiть якої допомоги вы потребуєте. Ми зв’яжемся з вами найближчим часом.</span>
+
+            <span class="popup__label">Як до вас звертатися?</span>
+            <input type="text" class="text-input popup__text-input" placeholder="Напишiть ваше iм’я">
+
+            <span class="popup__label">Телефон для зв’язку</span>
+            <input type="text" class="text-input popup__text-input" placeholder="Наприклад: +380951016057">
+
+            <span class="popup__label">Якої допомоги потребуєте?</span>
+            <textarea placeholder="Напишiть декiлька речень якої допомоги потребуєте" class="tarea-input idea__tarea-input"></textarea>
+
+            <div class="checkRow idea__checkRow">
+                <input type="checkbox" name="need-help-check" id="need-help-check">
+                <label for="need-help-check">
+                    Відправляючи форму, ви погоджуєтеся з нашою 
+                    <a href="javascript://">політикою обробки і зберігання персональних даних.</a>
+                </label>
+            </div>
+
+            <a href="javascript://" class="button popup__button">Надiслати</a>
+        </div>
+
+        <div class="popup" id="take-help">
+            <a href="javascript://" class="popup__close"><span class="icon-close"></span></a>
+            <h5 class="popup__heading">Допомогти волонтерам</h5>
+            <span class="popup__subtitle">Заповнiть форму та расскажiть чим ви можете допомогти нашим волонтерам. Ми звяжемся з вами найближчим часом.</span>
+
+            <span class="popup__label">Як до вас звертатися?</span>
+            <input type="text" class="text-input popup__text-input" placeholder="Напишiть ваше iм’я">
+
+            <span class="popup__label">Телефон для зв’язку</span>
+            <input type="text" class="text-input popup__text-input" placeholder="Наприклад: +380951016057">
+
+            <span class="popup__label">Чим би ви могли допомогти?</span>
+            <textarea placeholder="Напишiть декiлька речень якої допомоги потребуєте" class="tarea-input idea__tarea-input"></textarea>
+
+            <div class="checkRow idea__checkRow">
+                <input type="checkbox" name="take-help-check" id="take-help-check">
+                <label for="take-help-check">
+                    Відправляючи форму, ви погоджуєтеся з нашою 
+                    <a href="javascript://">політикою обробки і зберігання персональних даних.</a>
+                </label>
+            </div>
+
+            <a href="javascript://" class="button popup__button">Надiслати</a>
+        </div>
+
+    </div>
+
     <div class="content">
         <div class="darkScreen"></div>
 
@@ -64,7 +117,7 @@
                         <a href="javascript://" class="header__link">Контакти</a>
                     </nav>
     
-                    <a href="javascript://" class="button header__button">Допомогти</a>
+                    <a href="javascript://" class="button header__button take-help-btn">Допомогти</a>
 
                     <div class="header__toggler">
                         <span></span>
@@ -102,7 +155,7 @@
                     <a href="javascript://" class="header__link">Контакти</a>
                 </nav>
 
-                <a href="javascript://" class="button header__button">Допомогти</a>
+                <a href="javascript://" class="button header__button take-help-btn">Допомогти</a>
             </div>
 
             <div class="bottomRow"></div>
@@ -119,8 +172,8 @@
                     </h2>
 
                     <div class="mainBanner__buttons">
-                        <a href="javascript://" class="button mainBanner__button">СТАТИ ВОЛОНТЕРОМ</a>
-                        <a href="javascript://" class="button mainBanner__button button--nonAccent">Потребую допомоги</a>
+                        <a href="javascript://" class="button mainBanner__button take-help-btn">СТАТИ ВОЛОНТЕРОМ</a>
+                        <a href="javascript://" class="button mainBanner__button button--nonAccent need-help-btn">Потребую допомоги</a>
                     </div>
                 </div>
             </div>
@@ -370,7 +423,7 @@
                     <span class="orange">Добрi вчинки</span> <span class="underline"> - це легко!</span>
                 </h2>
 
-                <a href="javascript://" class="button centerBanner__button">Допомогти волонтерам</a>
+                <a href="javascript://" class="button centerBanner__button take-help-btn">Допомогти волонтерам</a>
 
                 <span class="centerBanner__label">Долучайся у соцiальних мережах:</span>
 
@@ -622,6 +675,8 @@
     
     <script src="./js/jquery-3.5.1.min.js"></script>
     <script src="./plugins/slick/slick.min.js"></script>
+    <script src="./js/jquery-ui.min.js"></script>
+    <script src="./plugins/lightbox/lightbox.min.js"></script>
     <script src="./js/index.js"></script>
 
 </body>

@@ -90,4 +90,22 @@ $(document).ready(function(){
     })
 
     $('#projects-tabs').tabs()
+
+    $('.need-help-btn').click(function(){
+        $('.popups').addClass('popups--show');
+        $('#need-help').addClass('popup--show');
+        $('.popup__close').click(function(){
+            $('.popups').removeClass('popups--show');
+            $('#need-help').removeClass('popup--show');
+        })
+    })
+
+    $('.take-help-btn').click(function(){
+        $('.popups').addClass('popups--show');
+        $('#take-help').addClass('popup--show');
+        $('.popup__close').click(function(){
+            $('.popups').removeClass('popups--show');
+            $('#take-help').removeClass('popup--show');
+        })
+    })
 })

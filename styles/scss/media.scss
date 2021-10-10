@@ -719,4 +719,26 @@ $cyan: #C2F2EC;
             padding-bottom: 50px;
         }
     }
+
+    .popup{
+        padding: 20px;
+
+        &__heading{
+            font-size: 18px;
+            margin-bottom: 0px;
+        }
+
+        &__subtitle{
+            font-size: 14px;
+        }
+
+        &__label{
+            font-size: 14px;
+            margin-bottom: 5px;
+        }
+
+        &__text-input{
+            margin-bottom: 10px;
+        }
+    }
 }
