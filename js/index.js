@@ -108,4 +108,18 @@ $(document).ready(function(){
             $('#take-help').removeClass('popup--show');
         })
     })
+                    
+    jQuery("document").ready(function($){
+
+        var nav = $('.header__bottom');
+    
+        $(window).scroll(function () {
+            if ($(this).scrollTop() > 136) {
+                nav.addClass("header__bottom--fixed");
+            } else {
+                nav.removeClass("header__bottom--fixed");
+            }
+        });
+    
+    });
 })

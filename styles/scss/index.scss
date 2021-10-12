@@ -421,12 +421,27 @@ body{
     }
 
     &__bottom{
-        
+        background: $blueLight;
+        transition: 0.3s;
         &-wrap{
             display: flex;
             padding-top: 30px;
             padding-bottom: 30px;
             align-items: center;
+            transition: 0.3s;
+        }
+
+        &--fixed{
+            position: fixed;
+            top: 0;
+            right: 0;
+            width: 100%;
+            z-index: 10;
+            box-shadow: 0px 5px 5px -5px rgba(34, 60, 80, 0.6);
+            .header__bottom-wrap{
+                padding-top: 10px;
+                padding-bottom: 10px;
+            }
         }
     }
 
